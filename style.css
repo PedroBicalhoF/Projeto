@@ -42,7 +42,6 @@ button {
     padding: 40px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -80,7 +79,6 @@ button:hover {
     padding: 40px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-top: 10px;
 }
 
@@ -116,36 +114,15 @@ nav a.active {
     background-size: cover;
 }
 
-#section2 {
+#section2,#section6,#section8{
     background-color: #182527;
 }
 
-#section3 {
+#section3 , #section5,#section7{
     background-color: #fff;
 }
 
-#section4 {
-    background-color: #20cd8d;
-}
-
-#section5 {
-    background-color: #fff;
-}
-
-#section6 {
-    background-color: #182527;
-}
-
-#section7 {
-    background-color: #fff;
-}
-
-#section8 {
-    background-color: #182527;
-}
-
-
-#section9 {
+#section4,#section9 {
     background-color: #20cd8d;
 }
 
@@ -265,12 +242,6 @@ text-transform: uppercase;
     color: #fff;
 
 }
-
-/* .card-left,
-.card-right {
-    flex: 1;
-    padding: 20px;
-} */
 
 .card-left,
 .card-right {
