@@ -1,0 +1,46 @@
+Bom dia Vitor!
+link do site modificado: 
+
+Conforme solicitado segue abaixo um relatorio junto com codigo refatorado sobre possiveis melhorias:
+
+Primeiramente separei o html e css em dois arquivos para facilitar leitura e revisões de codigo, 
+
+html{}
+
+inves da tag html para definir o scrrol-behavior substitui por * junto com (box-sizing: border-box;) oque torna o site mais compativel com diferentes resoluções,
+
+header{} 
+
+
+Retirei (color: #fff) uma vez que estava sendo substituido em "nav a", adicionei (display: flex; e justify-content: space-around) no lugar de (text-align: center;) pois além de organizar o texto na tela ele alinha dando o devido espaçamento e usei (font-size: 1.3vw;) que altera o tamanho da fonte para não haver quebra do texto
+
+
+<section id= "section1">
+.card-left,.card-right{}
+
+
+
+Havia repetição de codigo entao comentei o primeiro (.card-left,.card-right{}) pois estava sendo sobreescrito, substitui ao que estava sobreescrevendo o padding para (padding: 20px 0) para não haver corte dos botões antes e apos o acionamento da media query
+	
+
+<section id="section 5">
+.card-image{}
+
+
+Alterei o nome da classe para card-image2 que eu criei no css ele é basicamente a mesma no entanto o width foi 20vw 
+para respeitar a responsividade, precisei alterar a classe pois era a mesma da imagem do livro na section id="section2"
+
+
+@media (max-width: 768px){}
+.card{}
+ 
+
+Retirei o (min-width: 100%;) pois havia corte de parte das sections ao retirar houve centralização das mesmas, respeitando o espaçamento
+
+
+
+@media (max-width: 768px){}
+.card-image2{}
+
+
+adicionei a classe .card-image2 e alterei a altura para melhor vizualição e estruturação na interface
